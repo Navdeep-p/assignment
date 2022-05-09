@@ -1,0 +1,14 @@
+version: "3"
+services:
+  mymongodb:
+    image: mongo:latest
+    container_name: "mymongodb"
+    ports:
+      - 27017:27017
+  spring-boot-employee-management-system:
+    image: spring-boot-employee-management-system:1.0
+    container_name: spring-boot-employee-management-system
+    ports:
+      - 8085:8085
+    links:
+      - mymongodb
