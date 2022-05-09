@@ -23,10 +23,7 @@ public class EmployeeController {
         return uuid;
     }
 
-    @GetMapping("/employee")
-    public void getIdEmployee() {
 
-        employeeService.findEmployee(12);
 
-    }
+
 }

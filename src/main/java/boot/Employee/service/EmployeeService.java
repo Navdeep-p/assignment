@@ -39,11 +39,7 @@ public class EmployeeService {
                  return  token;
     }
 
-   public void findEmployee(int id) {
-        Employee employee = employeeRepository.findBy_Id(id);
-        System.out.println(employee);
 
-    }
 
 
 
